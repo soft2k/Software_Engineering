@@ -32,7 +32,7 @@ print(1.23)
 ### Результат.
 
 pic/Lab2_1.png
-![Меню](https://github.com/vnika2003/Software_Engineering/Тема_2/pic/Lab2_1.png)
+![Меню](https://github.com/vnika2003/Software_Engineering/blob/Тема_2/pic/Lab2_1.png)
 
 ### Выполнение основного задания
 На первой сцене было создано 3 объекта: Plane, Cube, Sphere. Для объекта Sphere был установлен Collider в режиме триггера. Для объекта Cube был применён материал красного цвета, а так же компонент RigidBody в режиме гравитации, чтобы у него появилась физика. Чтобы Cube не проваливался под Plane, объекту Plane также был добавлен компонент RigidBody, но уже в режиме кинематики.
