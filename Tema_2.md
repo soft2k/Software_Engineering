@@ -31,8 +31,8 @@ print(1.23)
 ```
 ### Результат.
 
-
-![Меню](https://github.com/S1GARETA/UnityLab1/blob/main/Demo%20files/Menu.jpg)
+pic/Lab2_1.png
+![Меню](https://github.com/vnika2003/Software_Engineering/pic/Lab2_1.png)
 
 ### Выполнение основного задания
 На первой сцене было создано 3 объекта: Plane, Cube, Sphere. Для объекта Sphere был установлен Collider в режиме триггера. Для объекта Cube был применён материал красного цвета, а так же компонент RigidBody в режиме гравитации, чтобы у него появилась физика. Чтобы Cube не проваливался под Plane, объекту Plane также был добавлен компонент RigidBody, но уже в режиме кинематики.
