@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/b3d06e8e-76cc-4018-b630-8d5ac15caea8)# Тема 1. Введение в Pythonn
+# Тема 1. Введение в Pythonn
 Отчет по Теме #1 выполнил(а):
 - Поляков Матвей Андреевич
 - ИВТ-22-2
@@ -25,7 +25,7 @@
 Перейдите на официальный сайт Git: https://git-scm.com/download/win и скачать Git
 
 ### Результат.
-![Меню](https://github.com/soft2k/Software_Engineering/blob/main/pic/1.png)
+![Меню](https://github.com/soft2k/Software_Engineering/blob/main/pic/Screenshot_1.png)
 
 ## Выводы
 
