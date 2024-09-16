@@ -195,7 +195,7 @@
   print(bool(false))
   ```
   # Результат
-![Меню](https://github.com/soft2k/Software_Engineering/blob/main/pic/Tema2Pic11.png)
+![Меню](https://github.com/soft2k/Software_Engineering/blob/main/pic/Tema2Pic11.PNG)
   # Вывод
   Вывел в строковую переменную пустоту и трансформировал в bool 
 
@@ -208,7 +208,7 @@
   print(a, b, c)
   ```
   # Результат
-![Меню](https://github.com/soft2k/Software_Engineering/blob/main/pic/Tema2Pic12.png)
+![Меню](https://github.com/soft2k/Software_Engineering/blob/main/pic/Tema2Pic12.PNG)
   # Вывод
   С помощью перечислениям запятой,можно выводить и присваивать значения
 
@@ -221,7 +221,7 @@
   print(int(input()))
   ```
   # Результат
-![Меню](https://github.com/soft2k/Software_Engineering/blob/main/pic/Tema2Pic13.png)
+![Меню](https://github.com/soft2k/Software_Engineering/blob/main/pic/Tema2Pic13.PNG)
   # Вывод
   С int и input он не принимает str выражения
 
@@ -236,7 +236,7 @@
   ```
   # Результат
 
-![Меню](https://github.com/soft2k/Software_Engineering/blob/main/pic/Tema2Pic14.png)
+![Меню](https://github.com/soft2k/Software_Engineering/blob/main/pic/Tema2Pic14.PNG)
   # Вывод
   С помощью * умножил str на число и получил не менее 16 символов
 
@@ -250,7 +250,7 @@
     print(f"Сегодня {day} {month} {year}. ", end="Всего хорошего!");
   ```
   # Результат
-![Меню](https://github.com/soft2k/Software_Engineering/blob/main/pic/Tema2Pic15.png)
+![Меню](https://github.com/soft2k/Software_Engineering/blob/main/pic/Tema2Pic15.PNG)
   # Вывод
   Вывел три переменные 
 
@@ -265,7 +265,7 @@
      print (str[:-5], 'my', str[5:])
   ```
   # Результат
-![Меню](https://github.com/soft2k/Software_Engineering/blob/main/pic/Tema2Pic16.png)
+![Меню](https://github.com/soft2k/Software_Engineering/blob/main/pic/Tema2Pic16.PNG)
   # Вывод
   
 
@@ -276,7 +276,7 @@
   print(len(str))
   ```
   # Результат
-![Меню](https://github.com/soft2k/Software_Engineering/blob/main/pic/Tema2Pic17.png)
+![Меню](https://github.com/soft2k/Software_Engineering/blob/main/pic/Tema2Pic17.PNG)
   # Вывод
  Благодаря len мы получили кол-во символов длины выражения
 
@@ -290,7 +290,7 @@
   print(str.lower())
   ```
   # Результат
-![Меню](https://github.com/soft2k/Software_Engineering/blob/main/pic/Tema2Pic18.png)
+![Меню](https://github.com/soft2k/Software_Engineering/blob/main/pic/Tema2Pic18.PNG)
   # Вывод
   С помощью lower мы перевели в нижний регистр
 
@@ -308,7 +308,7 @@
         print("Не четное")
   ```
   # Результат
-![Меню](https://github.com/soft2k/Software_Engineering/blob/main/pic/Tema2Pic19.png)
+![Меню](https://github.com/soft2k/Software_Engineering/blob/main/pic/Tema2Pic19.PNG)
 
 
    ## Самостоятельная работа №10
@@ -321,7 +321,7 @@
   print(str.upper())
   ```
   # Результат
-![Меню](https://github.com/soft2k/Software_Engineering/blob/main/pic/Tema2Pic20.png)
+![Меню](https://github.com/soft2k/Software_Engineering/blob/main/pic/Tema2Pic20.PNG)
   # Вывод
   С помощью upper мы перевели в нижний регистр
 
