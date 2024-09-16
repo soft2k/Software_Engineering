@@ -44,7 +44,7 @@
   print(5 + 3.25 + 100 + 6.7)
   ```
   # Результат
-
+![Меню](https://github.com/soft2k/Software_Engineering/blob/main/pic/Tema2Pic2.png)
   # Вывод
   С помощью print вывели 3 строки - число, текст, число с плавающей точкой
 
@@ -64,7 +64,7 @@
   print(one + two)
   ```
   # Результат
-
+![Меню](https://github.com/soft2k/Software_Engineering/blob/main/pic/Tema2Pic3.png)
   # Вывод
   С помощью print вывели 3 строки - обычная строка, строка с -f и использование переменной в print и сложили две переменные в print
 
@@ -84,7 +84,7 @@
     print(str(three))
   ```
   # Результат
-
+![Меню](https://github.com/soft2k/Software_Engineering/blob/main/pic/Tema2Pic4.png)
   # Вывод
   С помощью print вывели 3 строки:
   
@@ -104,7 +104,7 @@
   print(one, two, three)
   ```
   # Результат
-
+![Меню](https://github.com/soft2k/Software_Engineering/blob/main/pic/Tema2Pic5.png)
   # Вывод
   С помощью input() присвоил трем переменным значения
 
@@ -123,7 +123,7 @@
       print("Нахождения остатка от деления ", a % b)
   ```
   # Результат
-
+![Меню](https://github.com/soft2k/Software_Engineering/blob/main/pic/Tema2Pic6.png)
   # Вывод
   Знаков *,/,% выполнили математические операции
 1)Возведениен в степень
@@ -138,7 +138,7 @@
   print(word * 6)
   ```
   # Результат
-
+![Меню](https://github.com/soft2k/Software_Engineering/blob/main/pic/Tema2Pic7.png)
   # Вывод
   Мы произвели умножение над строковой перменной и получили результат,где это слово было продублированно на число умножения
 
@@ -152,7 +152,7 @@
   print(str.count("o"))
   ```
   # Результат
-
+![Меню](https://github.com/soft2k/Software_Engineering/blob/main/pic/Tema2Pic8.png)
   # Вывод
   С помощью count мы посчитатли сколько буква "О" встречается в выражение "hello world" 
 
@@ -166,7 +166,7 @@
   print("Hello\nWorld")
   ```
   # Результат
-
+![Меню](https://github.com/soft2k/Software_Engineering/blob/main/pic/Tema2Pic9.png)
   # Вывод
   С помощью \n разделил Hello и World
 
@@ -182,7 +182,7 @@
   print(str.count("o"))
   ```
   # Результат
-
+![Меню](https://github.com/soft2k/Software_Engineering/blob/main/pic/Tema2Pic10.png)
   # Вывод
   С помощью count мы посчитатли сколько буква "О" встречается в выражение "hello world" 
 
@@ -195,7 +195,7 @@
   print(bool(false))
   ```
   # Результат
-
+![Меню](https://github.com/soft2k/Software_Engineering/blob/main/pic/Tema2Pic11.png)
   # Вывод
   Вывел в строковую переменную пустоту и трансформировал в bool 
 
@@ -208,7 +208,7 @@
   print(a, b, c)
   ```
   # Результат
-
+![Меню](https://github.com/soft2k/Software_Engineering/blob/main/pic/Tema2Pic12.png)
   # Вывод
   С помощью перечислениям запятой,можно выводить и присваивать значения
 
@@ -221,7 +221,7 @@
   print(int(input()))
   ```
   # Результат
-
+![Меню](https://github.com/soft2k/Software_Engineering/blob/main/pic/Tema2Pic13.png)
   # Вывод
   С int и input он не принимает str выражения
 
@@ -236,7 +236,7 @@
   ```
   # Результат
 
-
+![Меню](https://github.com/soft2k/Software_Engineering/blob/main/pic/Tema2Pic14.png)
   # Вывод
   С помощью * умножил str на число и получил не менее 16 символов
 
@@ -250,7 +250,7 @@
     print(f"Сегодня {day} {month} {year}. ", end="Всего хорошего!");
   ```
   # Результат
-
+![Меню](https://github.com/soft2k/Software_Engineering/blob/main/pic/Tema2Pic15.png)
   # Вывод
   Вывел три переменные 
 
@@ -265,7 +265,7 @@
      print (str[:-5], 'my', str[5:])
   ```
   # Результат
-
+![Меню](https://github.com/soft2k/Software_Engineering/blob/main/pic/Tema2Pic16.png)
   # Вывод
   
 
@@ -276,7 +276,7 @@
   print(len(str))
   ```
   # Результат
-
+![Меню](https://github.com/soft2k/Software_Engineering/blob/main/pic/Tema2Pic17.png)
   # Вывод
  Благодаря len мы получили кол-во символов длины выражения
 
@@ -290,7 +290,7 @@
   print(str.lower())
   ```
   # Результат
-
+![Меню](https://github.com/soft2k/Software_Engineering/blob/main/pic/Tema2Pic18.png)
   # Вывод
   С помощью lower мы перевели в нижний регистр
 
@@ -308,7 +308,7 @@
         print("Не четное")
   ```
   # Результат
-
+![Меню](https://github.com/soft2k/Software_Engineering/blob/main/pic/Tema2Pic19.png)
 
 
    ## Самостоятельная работа №10
@@ -321,7 +321,7 @@
   print(str.upper())
   ```
   # Результат
-
+![Меню](https://github.com/soft2k/Software_Engineering/blob/main/pic/Tema2Pic20.png)
   # Вывод
   С помощью upper мы перевели в нижний регистр
 
