@@ -30,7 +30,7 @@
   print(123)
   ```
   # Результат
-
+![Меню](https://github.com/soft2k/Software_Engineering/blob/main/pic/Tema2Pic1.png)
   # Вывод
   С помощью print вывели 3 строки - число, текст, число с плавающей точкой
 
