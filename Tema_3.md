@@ -52,7 +52,7 @@
         print("Больше 0 и 10")
   ```
   # Результат
-![Меню](https://github.com/soft2k/Software_Engineering/blob/main/pic/Tema2Pic2.png)
+![Меню](https://github.com/soft2k/Software_Engineering/blob/Tema3/pic/Tema3Lab2.png)
   # Вывод
   С помощью if,elif,else написали условия для переменной
 
@@ -70,7 +70,7 @@
         print('Переменной нет')
   ```
   # Результат
-![Меню](https://github.com/soft2k/Software_Engineering/blob/main/pic/Tema2Pic3.png)
+![Меню](https://github.com/soft2k/Software_Engineering/blob/Tema3/pic/Tema3Lab3.png)
 
   # Вывод
   С помощью in проверили есть ли переменная в массиве 
@@ -92,7 +92,7 @@
         print('Переменной нет'))
   ```
   # Результат
-![Меню](https://github.com/soft2k/Software_Engineering/blob/main/pic/Tema2Pic4.png)
+![Меню](https://github.com/soft2k/Software_Engineering/blob/Tema3/pic/Tema3Lab4.png)
   # Вывод
 
   С помощью in проверили есть ли переменная в массиве и if else проверили четное ли число или нет
@@ -118,7 +118,7 @@
         break
   ```
   # Результат
-![Меню](https://github.com/soft2k/Software_Engineering/blob/main/pic/Tema2Pic5.png)
+![Меню](https://github.com/soft2k/Software_Engineering/blob/Tema3/pic/Tema3Lab5.png)
   # Вывод
   С помощью for i in range(10) создали цикл 0 до 10
 
@@ -140,7 +140,7 @@
         print(f"Буква {value} нет")
   ```
   # Результат
-![Меню](https://github.com/soft2k/Software_Engineering/blob/main/pic/Tema2Pic6.png)
+![Меню](https://github.com/soft2k/Software_Engineering/blob/Tema3/pic/Tema3Lab6.png)
   # Вывод
   
 С помощью for определили есть ли переменая в строке и вывели букву и ее индекс 
@@ -155,7 +155,7 @@
   ```
   # Результат
   
-![Меню](https://github.com/soft2k/Software_Engineering/blob/main/pic/Tema2Pic7.png)
+![Меню](https://github.com/soft2k/Software_Engineering/blob/Tema3/pic/Tema3Lab7.png)
   # Вывод
   
   С помощью for прописали 1000-7 10 раз
@@ -177,7 +177,7 @@
       print(value) 
   ```
   # Результат
-![Меню](https://github.com/soft2k/Software_Engineering/blob/main/pic/Tema2Pic8.png)
+![Меню](https://github.com/soft2k/Software_Engineering/blob/Tema3/pic/Tema3Lab8.png)
 
   # Вывод
   С помощью while создали цикл и прописали внутри проверки
@@ -200,7 +200,7 @@
   ```
   # Результат
   
-![Меню](https://github.com/soft2k/Software_Engineering/blob/main/pic/Tema2Pic9.png)
+![Меню](https://github.com/soft2k/Software_Engineering/blob/Tema3/pic/Tema3Lab9.png)
 
   # Вывод
   
@@ -226,7 +226,7 @@
             print("В массиве все числа четные")
   ```
   # Результат
-![Меню](https://github.com/soft2k/Software_Engineering/blob/main/pic/Tema2Pic10.png)
+![Меню](https://github.com/soft2k/Software_Engineering/blob/Tema3/pic/Tema3Lab10.png)
   # Вывод
   Написали проверку на чет/нечет числа в массиве
 
@@ -244,7 +244,7 @@
     print(a)
   ```
   # Результат
-![Меню](https://github.com/soft2k/Software_Engineering/blob/main/pic/Tema2Pic11.PNG)
+![Меню](https://github.com/soft2k/Software_Engineering/blob/Tema3/pic/Tema3Sam1.png)
 
   # Вывод
   
@@ -260,7 +260,7 @@
   ```
   # Результат
   
-![Меню](https://github.com/soft2k/Software_Engineering/blob/main/pic/Tema2Pic12.PNG)
+![Меню](https://github.com/soft2k/Software_Engineering/blob/Tema3/pic/Tema3Sam2.png)
 
   # Вывод
   С for написали программу которая выводит в обртаном порядке фразу hello world
@@ -283,7 +283,7 @@ else:
         print("Число в диапазоне 6-10")
   ```
   # Результат
-![Меню](https://github.com/soft2k/Software_Engineering/blob/main/pic/Tema2Pic13.PNG)
+![Меню](https://github.com/soft2k/Software_Engineering/blob/Tema3/pic/Tema3Sam3.png)
 
   # Вывод
   С помощью if,else написали программу который опр; в каком числе диапазоне 
@@ -316,7 +316,7 @@ else:
   ```
   # Результат
 
-![Меню](https://github.com/soft2k/Software_Engineering/blob/main/pic/Tema2Pic14.PNG)
+![Меню](https://github.com/soft2k/Software_Engineering/blob/Tema3/pic/Tema3Sam4.png)
   
 
 
@@ -334,7 +334,7 @@ for i in ('hello world'):
     print('hello world')
   ```
   # Результат
-![Меню](https://github.com/soft2k/Software_Engineering/blob/main/pic/Tema2Pic15.PNG)
+![Меню](https://github.com/soft2k/Software_Engineering/blob/Tema3/pic/Tema3Sam5.png)
  
 
 
