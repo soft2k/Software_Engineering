@@ -32,7 +32,7 @@
       main()
   ```
   # Результат
-![Меню](https://github.com/soft2k/Software_Engineering/blob/main/pic/Tema2Pic1.png)
+![Меню](https://github.com/soft2k/Software_Engineering/blob/Tema4/pic/Screenshot_1.png)
 
   # Вывод
   С помощью фунции def которая выполняет действие 2+2 и вывели его
@@ -48,7 +48,7 @@
         print(main())
   ```
   # Результат
-![Меню](https://github.com/soft2k/Software_Engineering/blob/main/pic/Tema2Pic2.png)
+![Меню](https://github.com/soft2k/Software_Engineering/blob/Tema4/pic/Screenshot_2.png)
   # Вывод
 С помощью фунции def которая выполняет действие 2+2 и вернули его значение с помощью return
 
@@ -66,7 +66,7 @@
         print(answer)
   ```
   # Результат
-![Меню](https://github.com/soft2k/Software_Engineering/blob/main/pic/Tema2Pic3.png)
+![Меню](https://github.com/soft2k/Software_Engineering/blob/Tema4/pic/Screenshot_3.png)
   # Вывод
   С помощью def создали функцию с двумя аргументами one,two и произвели действие 1+10 5 раз с помощью for 
 
@@ -90,7 +90,7 @@
 
   ```
   # Результат
-![Меню](https://github.com/soft2k/Software_Engineering/blob/main/pic/Tema2Pic4.png)
+![Меню](https://github.com/soft2k/Software_Engineering/blob/Tema4/pic/Screenshot_4.png)
   # Вывод
  Написали функцию который на вхол подается неизвестное кол-во аргументов и производится ариф. действия
   
@@ -116,7 +116,7 @@
       main(**{"x" : [1,2,3], "y":[3,3,0]})
   ```
   # Результат
-![Меню](https://github.com/soft2k/Software_Engineering/blob/main/pic/Tema2Pic5.png)
+![Меню](https://github.com/soft2k/Software_Engineering/blob/Tema4/pic/Screenshot_5.png)
   # Вывод
   Написали функцию с кортежом **kwargs и при помощи цикла for выводим значения
 
@@ -139,7 +139,7 @@
 
   ```
   # Результат
-![Меню](https://github.com/soft2k/Software_Engineering/blob/main/pic/Tema2Pic6.png)
+![Меню](https://github.com/soft2k/Software_Engineering/blob/Tema4/pic/Screenshot_6.png)
   # Вывод
 Написали две функции с помощью def,первая получает в виде параметра “**kwargs”.Вторая считает среднее
 
@@ -158,7 +158,7 @@ if __name__ == "__main__":
     hello()
   ```
   # Результат
-![Меню](https://github.com/soft2k/Software_Engineering/blob/main/pic/Tema2Pic7.png)
+![Меню](https://github.com/soft2k/Software_Engineering/blob/Tema4/pic/Screenshot_7.png)
   # Вывод
   Создали новый py файл и создали в нем функцию hello(),и вывзали ее в другом файле
 
@@ -181,7 +181,7 @@ if __name__ == "__main__":
           main()
   ```
   # Результат
-![Меню](https://github.com/soft2k/Software_Engineering/blob/main/pic/Tema2Pic8.png)
+![Меню](https://github.com/soft2k/Software_Engineering/blob/Tema4/pic/Screenshot_8.png)
   # Вывод
   С помощью math создали программу которая считает корень,sin,cos у любого числа
 
@@ -213,7 +213,7 @@ if __name__ == "__main__":
           main()
   ```
   # Результат
-![Меню](https://github.com/soft2k/Software_Engineering/blob/main/pic/Tema2Pic9.png)
+![Меню](https://github.com/soft2k/Software_Engineering/blob/Tema4/pic/Screenshot_9.png)
   # Вывод
   
   Написали программу,которая расчитывает какой день недели будет через datetime
@@ -248,7 +248,7 @@ if __name__ == "__main__":
       print(f'Площадь: {result}')
   ```
   # Результат
-![Меню](https://github.com/soft2k/Software_Engineering/blob/Tema4/pic/Tema2Pic10.png)
+![Меню](https://github.com/soft2k/Software_Engineering/blob/Tema4/pic/Screenshot_10.png)
   # Вывод
   НАписали программу которая находит площадь фигур от выбора пользователя и global переменной result
   
