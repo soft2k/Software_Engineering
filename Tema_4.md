@@ -354,8 +354,7 @@ if __name__ == "__main__":
   # Результат
 
 ![Меню](https://github.com/soft2k/Software_Engineering/blob/Tema4/pic/Screenshot_13.png)
-  # Вывод
-  С помощью * умножил str на число и получил не менее 16 символов
+
 
 
    ## Самостоятельная работа №5
@@ -384,8 +383,6 @@ if __name__ == "__main__":
   ```
   # Результат
 ![Меню](https://github.com/soft2k/Software_Engineering/blob/Tema4/pic/Screenshot_14.png)
-  # Вывод
-  Вывел три переменные 
 
 
 
