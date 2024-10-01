@@ -258,26 +258,63 @@ if __name__ == "__main__":
   ## Самостоятельная работа №1
   ### Выведите в консоль булевую переменную False, не используя слово False в строке или изначально присвоенную булевую переменную. Программа должна занимать не более двух строк редактора кода.
   ```python
-  false = ""
-  print(bool(false))
+ # Импортируем модуль datetime для работы с датами и временем
+from datetime import datetime 
+
+# Импортируем функцию sqrt из модуля math для вычисления квадратного корня
+from math import sqrt 
+
+# Определяем функцию main, которая принимает произвольное количество именованных аргументов
+def main(**kwargs): 
+
+    # Перебираем каждый именованный аргумент в kwargs
+    for key in kwargs.items(): 
+
+        # Вычисляем евклидово расстояние для каждой пары координат
+        result = sqrt(key[1][0] ** 2 + key[1][1] ** 2) 
+
+        # Печатаем результат
+        print(result) 
+
+# Проверяем, является ли это главным модулем (т.е. не импортируется как модуль в другой скрипт)
+if __name__ == '__main__': 
+
+    # Запоминаем время начала выполнения программы
+    start_time = datetime.now() 
+
+    # Вызываем функцию main с именованными аргументами
+    main( one=[10, 3], two=[5, 4], three=[15, 13], four=[93, 53], five=[133, 15] ) 
+
+    # Вычисляем время выполнения программы
+    time_costs = datetime.now() - start_time 
+
+    # Печатаем время выполнения программы
+    print(f"Время выполнения программы - {time_costs}") 
   ```
-  # Результат
-![Меню](https://github.com/soft2k/Software_Engineering/blob/main/pic/Tema2Pic11.PNG)
-  # Вывод
-  Вывел в строковую переменную пустоту и трансформировал в bool 
+ 
 
 
    ## Самостоятельная работа №2
-  ### Присвоить значения трем переменным и вывести их в консоль, используя только две строки редактора кода
+  ### Напишите программу, которая будет заменять игральную кость с 6 гранями. Если значение равно 5 или 6, то в консоль выводится «Вы победили», если значения 3 или 4, то вы рекурсивно должны вызвать эту же функцию, если значение 1 или 2, то в консоль выводится «Вы проиграли». При этом каждый вызов функции необходимо выводить в консоль значение “кубика”. 
   
   ```python
-  a, b, c = 1, 2, 3
-  print(a, b, c)
+        import random
+      def main():
+      
+          roll = random.randint(1,6)
+          print(f"Кубик показал: {roll}")
+          if roll == 1 or roll == 2:
+              print("Ты проиграл")
+          elif roll == 5 or roll == 6:
+              print("Ты выйграл")
+          else:
+              main()
+      
+      main()
   ```
   # Результат
-![Меню](https://github.com/soft2k/Software_Engineering/blob/main/pic/Tema2Pic12.PNG)
-  # Вывод
-  С помощью перечислениям запятой,можно выводить и присваивать значения
+![Меню](https://github.com/soft2k/Software_Engineering/blob/Tema4/pic/Screenshot_11.png)
+ 
 
 
 
@@ -285,25 +322,38 @@ if __name__ == "__main__":
   ### Реализуйте ввод данных в программу, через консоль, в виде только целых чисел (тип данных int). То есть при вводе буквенных символов в консоль, программа не должна работать. Программа должна занимать не более двух строк редактора кода.
   
   ```python
-  print(int(input()))
+      import datetime
+    import time
+    
+    def main():
+        for i in range(5):
+            nowtime = datetime.datetime.now()
+            print(nowtime.strftime("%H:%M:%S"))
+            time.sleep(1)
+    
+    main()
   ```
   # Результат
-![Меню](https://github.com/soft2k/Software_Engineering/blob/main/pic/Tema2Pic13.PNG)
-  # Вывод
-  С int и input он не принимает str выражения
+![Меню](https://github.com/soft2k/Software_Engineering/blob/Tema4/pic/Screenshot_12.png)
 
 
 
    ## Самостоятельная работа №4
   
-  ### Создайте только одну строковую переменную. Длина строки должна не превышать 5 символов. На выходе мы должны получить строку длиной не менее 16 символов. Программа должна занимать не более двух строк редактора кода
+  ### Напишите программу, которая считает среднее арифметическое от аргументов вызываемое функции, с условием того, что изначальное количество этих аргументов неизвестно. Программу необходимо реализовать используя одну функцию и “точку входа
   ```python
-    str = "qwer"
-    print(str * 5)
+  def main():
+    print("Введите любое количество чисел (разделяйте пробелом):")
+    numbers = [float(x) for x in input().split()]
+    result = average(*numbers)
+    print(f"Среднее арифметическое: {result:.2f}")
+
+if __name__ == "__main__":
+    main()
   ```
   # Результат
 
-![Меню](https://github.com/soft2k/Software_Engineering/blob/main/pic/Tema2Pic14.PNG)
+![Меню](https://github.com/soft2k/Software_Engineering/blob/Tema4/pic/Screenshot_13.png)
   # Вывод
   С помощью * умножил str на число и получил не менее 16 символов
 
@@ -313,84 +363,30 @@ if __name__ == "__main__":
   ### Создайте три переменные: день (тип данных - числовой), месяц (тип данных - строка), год (тип данных - числовой) и выведите в консоль текущую дату в формате: “Сегодня день месяц год. Всего хорошего!” используя F строку и оператор end внутри print(), в котором вы должны написать фразу “Всего хорошего!”. Программа должна занимать не более двух строк редактора кода
 
   ```python
-   day, month, year = 31, "декабря", 2024
-    print(f"Сегодня {day} {month} {year}. ", end="Всего хорошего!");
+      def heron_formula(a, b, c):
+          s = (a + b + c) / 2
+          area = (s * (s - a) * (s - b) * (s - c)) ** 0.5
+          return area
+      
+      
+      
+      
+        def average(*args):
+          if not args:
+              return 0
+          return sum(args) / len(args)
+      from main2 import heron_formula
+      a = float(input("Введите длину первой стороны треугольника: "))
+      b = float(input("Введите длину второй стороны треугольника: "))
+      c = float(input("Введите длину третьей стороны треугольника: "))
+      area = heron_formula(a, b, c)
+      print(f"Площадь треугольника: кв. единиц")
   ```
   # Результат
-![Меню](https://github.com/soft2k/Software_Engineering/blob/main/pic/Tema2Pic15.PNG)
+![Меню](https://github.com/soft2k/Software_Engineering/blob/Tema4/pic/Screenshot_14.png)
   # Вывод
   Вывел три переменные 
 
-
-
-   ## Самостоятельная работа №6
-  
-  ### В предложении ‘Hello World’ вставьте ‘my’ между двумя словами. Выведите полученное предложение в консоль в одну строку. Программа должна занимать не более двух строк редактора кода.
-
-  ```python
-     str = 'Hello World'
-     print (str[:-5], 'my', str[5:])
-  ```
-  # Результат
-![Меню](https://github.com/soft2k/Software_Engineering/blob/main/pic/Tema2Pic16.PNG)
-  # Вывод
-  
-
-   ## Самостоятельная работа №7
-  ### Узнайте длину предложения ‘Hello World’, результат выведите в консоль. Программа должна занимать не более двух строк редактора кода
-  ```python
-  str = "Hello World"
-  print(len(str))
-  ```
-  # Результат
-![Меню](https://github.com/soft2k/Software_Engineering/blob/main/pic/Tema2Pic17.PNG)
-  # Вывод
- Благодаря len мы получили кол-во символов длины выражения
-
-  
-   ## Самостоятельная работа №8
-
-   
-  ### Переведите предложение ‘HELLO WORLD’ в нижний регистр. Программа должна занимать не более двух строк редактора кода
-  ```python
-  str = "HELLO WORLD"
-  print(str.lower())
-  ```
-  # Результат
-![Меню](https://github.com/soft2k/Software_Engineering/blob/main/pic/Tema2Pic18.PNG)
-  # Вывод
-  С помощью lower мы перевели в нижний регистр
-
-
-   ## Самостоятельная работа №9
-
-   
-  ### Напишите программу, которая проверяет, является ли введенное число четным.
-  
-  ```python
-      int =  int(input())
-    if int % 2 == 0:
-        print("Четное")
-    else:
-        print("Не четное")
-  ```
-  # Результат
-![Меню](https://github.com/soft2k/Software_Engineering/blob/main/pic/Tema2Pic19.PNG)
-
-
-   ## Самостоятельная работа №10
-
-   
-  ### Переведите предложение ‘hello world’ в верхний регистр
-  
-  ```python
-  str = "hello world"
-  print(str.upper())
-  ```
-  # Результат
-![Меню](https://github.com/soft2k/Software_Engineering/blob/main/pic/Tema2Pic20.PNG)
-  # Вывод
-  С помощью upper мы перевели в нижний регистр
 
 
   
