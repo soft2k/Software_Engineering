@@ -30,7 +30,7 @@
     print(set_1 - set_2)
   ```
   # Результат
-![Меню](https://github.com/soft2k/Software_Engineering/blob/main/pic/Tema2Pic1.png)'
+![Меню](https://github.com/soft2k/Software_Engineering/blob/Tema5/pic/Screenshot_1.png)'
 
   # Вывод
   С помощью - убрали элементы из первого множества
@@ -47,7 +47,7 @@
     print(a)
   ```
   # Результат
-![Меню](https://github.com/soft2k/Software_Engineering/blob/main/pic/Tema2Pic2.png)
+![Меню](https://github.com/soft2k/Software_Engineering/blob/Tema5/pic/Screenshot_2.png)'
 
   # Вывод
   Написали две программы через set и frozenset, и при frozenset выходит ошибка
@@ -68,7 +68,7 @@
     print(replace([1,2,3,4,5]))
   ```
   # Результат
-![Меню](https://github.com/soft2k/Software_Engineering/blob/main/pic/Tema2Pic3.png)
+![Меню](https://github.com/soft2k/Software_Engineering/blob/Tema5/pic/Screenshot_3.png)'
 
 
   # Вывод
@@ -85,7 +85,7 @@
       print(a[2:6])
   ```
   # Результат
-![Меню](https://github.com/soft2k/Software_Engineering/blob/main/pic/Tema2Pic4.png)
+![Меню](https://github.com/soft2k/Software_Engineering/blob/Tema5/pic/Screenshot_4.png)'
 
   # Вывод
   С помощью [2:6] мы вывели отдельные элементы с списка
@@ -103,7 +103,7 @@
       print(useless([-12.5,54,77.3,0,-36,98.2,-63,21.7,47,-89.6]))
   ```
   # Результат
-![Меню](https://github.com/soft2k/Software_Engineering/blob/main/pic/Tema2Pic5.png)
+![Меню](https://github.com/soft2k/Software_Engineering/blob/Tema5/pic/Screenshot_5.png)'
 
   # Вывод
 
@@ -120,7 +120,7 @@ nikolya, vasiliy, ivan = sp
 print(nikolya,vasiliy,ivan)
   ```
   # Результат
-![Меню](https://github.com/soft2k/Software_Engineering/blob/main/pic/Tema2Pic6.png)
+![Меню](https://github.com/soft2k/Software_Engineering/blob/Tema5/pic/Screenshot_6.png)'
   # Вывод
  Использовали распеделение списков 
 
@@ -134,7 +134,7 @@ print(nikolya,vasiliy,ivan)
       print('Отсортированный список без наименьшего элемента:\n', a)
   ```
   # Результат
-![Меню](https://github.com/soft2k/Software_Engineering/blob/main/pic/Tema2Pic7.png)
+![Меню](https://github.com/soft2k/Software_Engineering/blob/Tema5/pic/Screenshot_7.png)'
   # Вывод
   Код формирует список целых чисел, а затем упорядочивает его элементы по возрастанию. Он выводит упорядоченный список. Затем он удаляет самый первый элемент списка с помощью метода pop и снова выводит список, но уже без   самого первого элемента.
 
@@ -158,7 +158,7 @@ print(nikolya,vasiliy,ivan)
   ```
   # Результат
   
-![Меню](https://github.com/soft2k/Software_Engineering/blob/main/pic/Tema2Pic8.png)
+![Меню](https://github.com/soft2k/Software_Engineering/blob/Tema5/pic/Screenshot_8.png)'
 
   # Вывод
  Делаем списки от 1 до 100 разной длины.Затем создаем новый список,где случайное число (от 1 то 5)
@@ -187,7 +187,7 @@ if __name__ == '__main__':
     superset({90, 100}, {3, 5})
   ```
   # Результат
-![Меню](https://github.com/soft2k/Software_Engineering/blob/main/pic/Tema2Pic9.png)
+![Меню](https://github.com/soft2k/Software_Engineering/blob/Tema5/pic/Screenshot_9.png)'
 
   # Вывод
  Код определяет функцию superset, которая сравнивает два множества (set_1 и set_2) и выводит сообщение о том, является ли одно из них чистым супермножеством другого.
@@ -204,7 +204,7 @@ if __name__ == '__main__':
   print(str.count("o"))
   ```
   # Результат
-![Меню](https://github.com/soft2k/Software_Engineering/blob/main/pic/Tema2Pic10.png)
+![Меню](https://github.com/soft2k/Software_Engineering/blob/Tema5/pic/Screenshot_10.png)'
 
   # Вывод
   Код создает список и выводит его в обратном порядке
@@ -240,7 +240,7 @@ if __name__ == '__main__':
       print("Работник, посетивший ресторан больше всего:", most_frequent_worker)
   ```
   # Результат
-![Меню](https://github.com/soft2k/Software_Engineering/blob/main/pic/Tema2Pic11.PNG)
+![Меню](https://github.com/soft2k/Software_Engineering/blob/Tema5/pic/Screenshot_11.png)'
 
   # Вывод
   Код выводит уникальныйх,общее кол-во чеков и работника,больше всего посетивший ресторан
@@ -276,7 +276,7 @@ if __name__ == '__main__':
         main()
   ```
   # Результат
-![Меню](https://github.com/soft2k/Software_Engineering/blob/main/pic/Tema2Pic12.PNG)
+![Меню](https://github.com/soft2k/Software_Engineering/blob/Tema5/pic/Screenshot_12.png)'
   # Вывод
   С помощью перечислениям запятой,можно выводить и присваивать значения
 
@@ -311,7 +311,7 @@ if __name__ == '__main__':
       print("Площадь второго треугольника:", area2)
   ```
   # Результат
-![Меню](https://github.com/soft2k/Software_Engineering/blob/main/pic/Tema2Pic13.PNG)
+![Меню](https://github.com/soft2k/Software_Engineering/blob/Tema5/pic/Screenshot_13.png)'
   # Вывод
 
 
@@ -337,7 +337,7 @@ if __name__ == '__main__':
   ```
   # Результат
 
-![Меню](https://github.com/soft2k/Software_Engineering/blob/main/pic/Tema2Pic14.PNG)
+![Меню](https://github.com/soft2k/Software_Engineering/blob/Tema5/pic/Screenshot_14.png)'
   # Вывод
    Этот код определяет функцию fix_grades, которая обрабатывает список оценок и возвращает новый список с изменёнными оценками по следующим правилам:
 
@@ -368,7 +368,7 @@ if __name__ == '__main__':
   ```
 
   # Результат
-![Меню](https://github.com/soft2k/Software_Engineering/blob/main/pic/Tema2Pic15.PNG)
+![Меню](https://github.com/soft2k/Software_Engineering/blob/Tema5/pic/Screenshot_15.png)'
   # Вывод
   
 
