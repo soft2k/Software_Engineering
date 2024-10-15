@@ -1,6 +1,6 @@
 
-# Тема 7. Работа с файлами (ввод, вывод)
-Отчет по Теме #7 выполнил(а):
+# Тема 6. Работа с файлами (ввод, вывод)
+Отчет по Теме #6 выполнил(а):
 - Поляков Матвей Андреевич
 - ИВТ-22-2
 
@@ -23,30 +23,50 @@
 - к.э.н., доцент Панов М.А.
 
   ## Лабораторная №1
-  ### Составьте текстовый файл и положите его в одну директорию с программой на Python. Текстовый файл должен состоять минимум из двух строк.
-  ```
-  Привет!
-  ```
+  ### В школе, где вы учились, узнали, что вы крутой программист и попросили написать программу для учителей, которая будет при входе кабинета писать для него ключ доступа и статус, закрывать кабинет или нет. При написании программы необходимо использовать словарь (dict), который на вход получает номер кабинета, а возвращает необходимую информацию. Если кабинета, который вы ввели нет в словаре, то в консоль в виде значения ключа нужно вывести "None" и виде статуса вывести "False". По большому счету написали данную программу мы с вами научились заменять иногда громоздкую конструкцию if/elif/else. Поскольку здесь функция словар полностью повторяет функциональность условия, но при этом использовании словарей в более сложных программах есть намного больше возможностей реализации.
+      ```python
+     request = int(input('Введите номер кабинета: '))
+    dictionary = {
+        101: {'key': 1234, 'access': True},
+        102: {'key': 1337, 'access': True},
+        103: {'key': 8943, 'access': True},
+        104: {'key': 5555, 'access': False},
+        None: {'key': None, 'access': False}
+    }
+    response = dictionary.get(request)
+    if not response:
+        response = dictionary[None]
+    key = response.get('key')
+    access = response.get('access')
+    print(key, access)
+      ```
   # Результат
-![Меню](https://github.com/soft2k/Software_Engineering/blob/main/pic/Tema2Pic1.png)
+![Меню](https://github.com/soft2k/Software_Engineering/blob/Tema6/pic/Screenshot_1.png)
   # Вывод
- Создал файл
+ Суть кода - это простая система проверки доступа к кабинетам, где пользователь вводит номер кабинета, а программа возвращает информацию о ключе и доступности этого кабинета.
 
 
 
    ## Лабораторная №2
-  ### Напишите программу, которая выведет только первую строку из вашего файла, при этом используйте конструкцию open()/close().
+  ### Алексей решил создать самый большой словарь в мире. Для этого он придумал функцию dictmaker (*kwargs), которая принимает неограниченное количество параметров «ключ: значение» и обновляет созданный им словарь mydict, состоящий всего из одного элемента «first» co значением «so easy». Помогите Алексею создать данную функцию. Ниже на скриншоте мы использовали встроенный модуль print, который выводит большие объемы информации более понятно для восприятия человеческим глазом. Иногда очень удобно использовать данную возможность Python.
   
       ```python
-     with open('readme.txt','r',encoding='utf-8') as file:
-        line = file.readline().strip()
-    print(line)
+     from pprint import pprint
+
+my_dict = {'first': 'so easy'}
+
+def dict_maker (**kwargs):
+    my_dict.update(**kwargs)
+
+dict_maker(a1 = 1, a2 = 20, a3 = 54, a4 = 13)
+dict_maker(name = 'Ксения', age = 20, weight = 60, eyes_color = 'green')
+pprint(my_dict)
       ```
   # Результат
-![Меню](https://github.com/soft2k/Software_Engineering/blob/main/pic/Tema2Pic2.png)
+![Меню](https://github.com/soft2k/Software_Engineering/blob/Tema6/pic/Screenshot_2.png)
 
   # Вывод
-  С помощью open открыли файл txt и вывели первую строчку Привет!
+  Этот код создает словарь my_dict, затем использует функцию dict_maker для добавления новых пар ключ-значение в этот словарь с помощью метода update(), и в конце выводит обновленный словарь с помощью функции pprint()
 
 
 
@@ -54,15 +74,18 @@
   ### Напишите программу, которая выведет все строки из вашего файла в массиве, при этом используйте конструкцию open()/close().
   
   ```python
-    with open('readme.txt','r',encoding='utf-8') as file:
-        line = file.readlines()
-    print(line)
+  input_string = 'HelloWorld'
+    result = tuple(input_string)
+    print(result)
+    print(list(result))
 
   ```
   # Результат
-![Меню](https://github.com/soft2k/Software_Engineering/blob/main/pic/Tema2Pic3.png)
+
+![Меню](https://github.com/soft2k/Software_Engineering/blob/Tema6/pic/Screenshot_3.png)
   # Вывод
-  С помощью open открыли файл txt и вывели все строчки
+
+ Этот код преобразует строку 'HelloWorld' в кортеж символов, затем выводит этот кортеж, после чего преобразует кортеж в список и выводит полученный список.
 
 
 
@@ -71,283 +94,179 @@
   
   ### Напишите программу, которая выведет все строки из вашего файла в массиве, при этом используйте конструкцию with open().
   ```python
-    with open('readme.txt','r',encoding='utf-8') as file:
-        line = file.readlines()
-    print(line)
+    def personal_info(name, age, company = 'unnamed'):
+    print(f"Имя: {name} Возраст: {age} Компания: {company}")
+    
+    tom = ("Матвей", 20)
+    personal_info(*tom)
+    
+    bob = ("Алексей", 20, "Google")
+    personal_info(*bob)
   ```
 
   # Результат
-![Меню](https://github.com/soft2k/Software_Engineering/blob/main/pic/Tema2Pic4.png)
+![Меню](https://github.com/soft2k/Software_Engineering/blob/Tema6/pic/Screenshot_4.png)
+
   # Вывод
-    С помощью open открыли файл txt и вывели все строчки
+  Этот код определяет функцию personal_info, которая принимает информацию о человеке (имя, возраст и компанию с значением по умолчанию), а затем демонстрирует использование этой функции с распаковкой кортежей для двух разных наборов данных: один без указания компании, другой с полной информацией, включая компанию.
 
 
 ## Лабораторная №5
   
-  ### Напишите программу, которая выведет каждую строку из вашего файла отдельно, при этом используйте конструкцию with open().
-  ```python
-  with open('readme.txt','r',encoding='utf-8') as file:
-   for line in file:
-      print(line.strip())
-  ```
-  # Результат
-![Меню](https://github.com/soft2k/Software_Engineering/blob/main/pic/Tema2Pic5.png)
-
-  # Вывод
-   С помощью open открыли файл txt и вывели все строчки по отдельности
-
-
-
-   ## Лабораторная №6
-  
-  ### Напишите программу, которая будет добавлять новую строку в ваш файл, а потом выведет полученный файл в консоль. Вывод можно осуществлять любым способом. Обязательно проверьте сам файл, чтобы изменения в нем тоже отображались.
+  ### Для сопровождения первых лиц государства X нужен кортеж, но никто не может определиться с порядком машин, поэтому вам нужно написать функцию, которая будет сортировать кортеж, состоящий из целых чисел по возрастанию, и возвращает его. Если хотя бы один элемент не является целым числом, то функция возвращает исходный кортеж.
 
   ```python
-      with open('readme.txt','a',encoding='utf-8') as file:
-        file.write('\nНовая строка')
-      with open('readme.txt','r',encoding='utf-8') as file:
-        print(file.read())
+  def tuple_sort(tpl):
+    for elm in tpl:
+        if not isinstance(elm, int):
+            return tpl
+    return tuple(sorted(tpl))
+
+if __name__ == '__main__':
+    print(tuple_sort((5, 5, 3, 1, 9)))
+    print(tuple_sort((5, 5, 2.1, '1', 9)))
   ```
   # Результат
-![Меню](https://github.com/soft2k/Software_Engineering/blob/main/pic/Tema2Pic6.png)
+![Меню](https://github.com/soft2k/Software_Engineering/blob/Tema6/pic/Screenshot_5.png)
 
   # Вывод
-  С помощью file.write добавили новую строчку и 
-    
-  ## Лабораторная №7
-  ### Напишите программу, которая перепишет всю информацию, которая была у вас в файле до этого, например напишет любые данные из произвольно вами составленного списка. Также не забудьте проверить что измененная вами информация сохранилась в файле.
-  
-  ```python
-      string = ['Первая строка', 'Вторая строка', 'Третья строка']
-    with open('readme.txt','w',encoding='utf-8') as file:
-        for line in string:
-            file.write(line + '\n')
-    with open('readme.txt','r',encoding='utf-8') as file:
-        print(file.read())
-  ```
-  # Результат
-![Меню](https://github.com/soft2k/Software_Engineering/blob/main/pic/Tema2Pic7.png)
-  # Вывод
-   С помощью file.write добавили новые строчки,перепесали данные 
-
-  
-   ## Лабораторная №8
-
    
-  ### Выберите любую папку на своем компьютере, имеющую вложенные директории. Выведите на печать в терминал ее содержимое, как и всех подкаталогов при помощи функции print_docs(directory).
-  ```python
-      import os
-    def print_docs(directory):
-        for root, dirs, files in os.walk(directory):
-            for name in files:
-                print(os.path.join(root, name))
-    print_docs(r'C:\Users\matve\OneDrive\Рабочий стол\pic')
-  ```
-  # Результат
-![Меню](https://github.com/soft2k/Software_Engineering/blob/main/pic/Tema2Pic8.png)
-
-  # Вывод
-  Все скриншоты выводится в терминал
-
-
-   ## Лабораторная №9
-
-   
-  ### Документ «input.txt» содержит следующий текст: Приветствие Спасибо Извините Пожалуйста До свидания Ты готов? Как дела? С днем рождения! Удача! Я тебя люблю. Требуется реализовать функцию, которая выводит слово, имеющее максимальную длину (или список слов, если таковых несколько). Проверьте работоспособность программы на своем наборе данных.
-  
-  ```python
-      def max(filename):
-        with open(filename, 'r', encoding='utf-8') as file:
-            words = file.read().split()
-        max_length = max(len(word) for word in words)
-        return [word for word in words if len(word) == max_length]
-    print(max('readme.txt'))
-  ```
-  # Результат
-![Меню](https://github.com/soft2k/Software_Engineering/blob/main/pic/Tema2Pic9.png)
-
-  # Вывод
-  С помощью \n разделил Hello и World
-
-
-
-   ## Лабораторная №10
-
-   
-  ### Требуется создать csv-файл «rows_300.csv» со следующими столбцами: • № - номер по порядку (от 1 до 300); • Секунда – текущая секунда на вашем ПК; • Микросекунда – текущая миллисекунда на часах. Для наглядности на каждой итерации цикла искусственно приостанавливайте скрипт на 0,01 секунду.
-  
-  ```python
-import csv
-import time
-with open('rows_300.csv', 'w', newline='') as csvfile:
-    writer = csv.writer(csvfile)
-    writer.writerow(['№', 'Секунда', 'Микросекунда'])
-    for i in range(1, 301):
-        seconds = time.localtime().tm_sec
-        microseconds = int(time.time() * 1e6) % 1e6
-        print(f"Строка {i}: Секунды - {seconds}, Микросекунды - {microseconds}")
-        writer.writerow([i, seconds, microseconds])
-        time.sleep(0.01)
-  ```
-  # Результат
-![Меню](https://github.com/soft2k/Software_Engineering/blob/main/pic/Tema2Pic10.png)
-
-
-  # Вывод
-  Создали csv файл и занесли в него данные
+Этот код определяет функцию tuple_sort, которая сортирует кортеж, если все его элементы являются целыми числами, иначе возвращает исходный кортеж без изменений, и демонстрирует её работу на двух примерах: один с кортежем, содержащим только целые числа, и другой с кортежем, содержащим смешанные типы данных.
 
 
   ## Самостоятельная работа №1
-  ### Выведите в консоль булевую переменную False, не используя слово False в строке или изначально присвоенную булевую переменную. Программа должна занимать не более двух строк редактора кода.
+  ### При создании сайта у вас возникла потребность обрабатывать данные пользователи в странной форме, а потом переводить их в нужные вам форматы. Вы хотите принимать от пользователя последовательность чисел, разделенных пробелом, а после переформатировать эти данные в список и кортеж. Реализуйте вашу задачу. Для получения начальных данных используйте input(). Результатом программы будет выведенный список и кортеж из начальных данных.
+
   ```python
-      from collections import Counter
-    with open('aaa.txt', 'r', encoding='utf-8') as file:
-        text = file.read()
-    words = text.split()
-    word_count = len(words)
-    word_freq = Counter(words)
-    most_common_word, most_common_count = word_freq.most_common(1)[0]
-    print(f'Количество слов: {word_count}')
-    print(f'Самое частое слово: "{most_common_word}" (встречается {most_common_count} раз)')
+     input_string = input('Введите числа через пробел: ')
+
+    numbers_list = list(map(int, input_string.split()))
+    numbers_tuple = tuple(numbers_list)
+    
+    print("Список:", numbers_list)
+    print("Кортеж:", numbers_tuple)
   ```
+
   # Результат
-![Меню](https://github.com/soft2k/Software_Engineering/blob/main/pic/Tema2Pic11.PNG)
+![Меню](https://github.com/soft2k/Software_Engineering/blob/Tema6/pic/Screenshot_6.png)
 
   # Вывод
-  Вывел в сколько всего слов и частое слова
+ 
+Этот код запрашивает у пользователя ввод чисел через пробел, преобразует введенную строку в список целых чисел, затем создает кортеж из этого списка, и выводит на экран полученный список и кортеж.
 
 
    ## Самостоятельная работа №2
-  ### У вас появилась потребность в ведении книги расходов, посмотрев все существующие варианты вы пришли к выводу что вас ничего не устраивает и нужно все делать самому. Напишите программу для учета расходов. Программа должна позволять вводить информацию о расходах, сохранять ее в файл и выводить существующие данные в консоль. Ввод информации происходит через консоль. Результатом выполнения задачи будет: скриншот файла с учетом расходов, листинг кода, и вывод в консоль, с демонстрацией работоспособности программы.
+  ### Николай знает, что кортежи являются неизменяемыми, но он очень упрямый и всегда хочет доказать, что он прав. Студент решил создать функцию, которая будет удалять первое появление определенного элемента из кортежа по значению и возвращать кортеж без него. Попробуйте повторить шедевр не признающего авторитеты начинающего программиста. Но учтите, что Николай не всегда уверен в наличии элемента в кортеже (в этом случае кортеж превращается функцией в исходном виде).
   
   ```python
-  # expense_tracker.py
 
-def add_expense(expenses_file):
-    expense = input("Введите описание расхода: ")
-    cost = float(input("Введите стоимость расхода: "))
-    with open(expenses_file, 'a', encoding='utf-8') as file:
-        file.write(f"{expense}: {cost}\n")
 
-def view_expenses(expenses_file):
-    with open(expenses_file, 'r', encoding='utf-8') as file:
-        expenses = file.readlines()
-    for expense in expenses:
-        print(expense.strip())
+def remover(tup, elem):
+    try:
+        index = tup.index(elem)
+        new_tuple = list(tup)
+        del new_tuple[index]
+        return tuple(new_tuple)
+    except ValueError:
+        return tup
 
-def main():
-    expenses_file = 'expenses.txt'
-    while True:
-        print("1. Добавить расход")
-        print("2. Просмотреть расходы")
-        print("3. Выход")
-        choice = input("Выберите опцию: ")
-        if choice == '1':
-            add_expense(expenses_file)
-        elif choice == '2':
-            view_expenses(expenses_file)
-        elif choice == '3':
-            break
-        else:
-            print("Неверная опция. Пожалуйста, попробуйте снова.")
-
-if __name__ == "__main__":
-    main()
+print(remover((1, 2, 3), 1))
+print(remover((1, 2, 3, 1, 2, 3, 4, 5, 2, 3, 4, 2, 4, 2), 3))
+print(remover((2, 4, 6, 6, 4, 2), 9))
   ```
+
   # Результат
-![Меню](https://github.com/soft2k/Software_Engineering/blob/main/pic/Tema2Pic12.PNG)
+![Меню](https://github.com/soft2k/Software_Engineering/blob/Tema6/pic/Screenshot_7.png)
   # Вывод
-  Создали программу которая добавляет ии показывает записи расходов
+ 
+Этот код определяет функцию remover, которая удаляет первое вхождение заданного элемента из кортежа, если он там присутствует, и возвращает новый кортеж без этого элемента; если элемент не найден, возвращается исходный кортеж без изменений. Затем демонстрируется работа функции на трех различных примерах.
 
 
 
    ## Самостоятельная работа №3
-  ### Имеется файл input.txt с текстом на латинице. Напишите программу, которая выводит следующую статистику по тексту: количество букв латинского алфавита; число слов; число строк. • Текст в файле: Beautiful is better than ugly. Explicit is better than implicit. Simple is better than complex. Complex is better than complicated. • Ожидаемый результат: Input file contains: 108 letters 20 words 4 lines
+  ### Ребята посмотрели кто из них одним нажатием на numpad наберет больше повторяющихся цифр, но не понимают, как узнать победителя. Вам им нужно в этом помочь. Дана строка в виде случайной последовательности чисел от 0 до 9 (длина строки минимум 15 символов). Требуется создать словарь, который в качестве ключей будет принимать данные числа (т. е. ключи будут типом int), а в качестве значений – количество этих чисел в имеющейся последовательности. Для построения словаря создайте функцию, принимающую строку из цифр. Функция должна возвращать словарь из 3-х самых часто встречаемых чисел, также эти значения нужно вывести в порядке возрастания ключа.
+
   
   ```python
- def text_statistics(filename):
-    with open(filename, 'r', encoding='utf-8') as file:
-        content = file.readlines()
-
-
-    line_count = len(content)
-
-
-    word_count = 0
-    letter_count = 0
-
-    for line in content:
-        words = line.split()
-        word_count += len(words)
-        letter_count += sum(c.isalpha() for c in line)
-
-    return letter_count, word_count, line_count
-
-def main():
-    filename = 'readme.txt'
-    letters, words, lines = text_statistics(filename)
-    print(f"Input file contains: {letters} letters {words} words {lines} lines")
-
-if __name__ == "__main__":
-    main()
+     from collections import Counter
+    def count_repeating_numbers(sequence):
+    
+        numbers_counts = Counter(sequence)
+        most_common_numbers = numbers_counts.most_common(3)
+        for key, value in sorted(most_common_numbers, key = lambda x: x[0]):
+            print('Число:', key , 'Встречается:', value)
+    
+    sequence = '123456789'
+    count_repeating_numbers(sequence)
   ```
+
   # Результат
-![Меню](https://github.com/soft2k/Software_Engineering/blob/main/pic/Tema2Pic13.PNG)
+![Меню](https://github.com/soft2k/Software_Engineering/blob/Tema6/pic/Screenshot_8.png)
   # Вывод
-  Программа выводит количество букв, слов и строк из файла.
+  Этот код определяет функцию count_repeating_numbers, которая использует Counter из модуля collections для подсчета частоты встречаемости чисел в заданной последовательности. Затем выводит три наиболее часто встречающихся числа и количество их повторений, отсортированных по самому числу. В примере функция вызывается с последовательностью '123456789'.
 
 
 
    ## Самостоятельная работа №4
   
-  ### Напишите программу, которая получает на вход предложение, выводит его в терминал, заменяя все запрещенные слова звездочками * (количество звездочек равно количеству букв в слове). Запрещенные слова, разделенные символом пробела, хранятся в текстовом файле input.txt. Все слова в этом файле записаны в нижнем регистре. Программа должна заменить запрещенные слова, где бы они ни встречались, даже в середине другого слова. Замена производится независимо от регистра: если файл input.txt содержит запрещенное слово exam, то слова exam, Exam, ExaM, EXAM и exAm должны быть заменены на ****. • Запрещенные слова: hello email python the exam wor is • Предложение для проверки: Hello, world! Python IS the programming language of thE future. My EMAIL is ksusha.katkova2468@yandex.ru PYTHON is awesome!!!! • Ожидаемый результат: *****, ***ld! ****** ** *** programming language of *** future. My ***** ** ksusha.katkova2468@yandex.ru ****** ** awesome!!!!
-  ```python
-   import re
-def censor_text(input_text, banned_words):
-    for word in banned_words:
-        input_text = re.sub(word, '*' * len(word), input_text, flags=re.IGNORECASE)
-    return input_text
-with open('readme.txt', 'r', encoding='utf-8') as file:
-    banned_words = file.read().strip().split()
-sentence = input("Введите предложение для проверки: ")
-censored_sentence = censor_text(sentence, banned_words)
-print(censored_sentence)
-  ```
-  # Результат
+  ### Ваш хороший друг владеет офисом со входом по электронным картам, ему нужно чтобы вы написали программу, которая показывала бы в каком порядке сотрудники входили и выходили из офиса. Определение сотрудника происходит по id. Напишите функцию, которая на вход принимает кортеж и случайный элемент (id), его можно принимать самостоятельно. Требуется вернуть новый кортеж, начинающийся с первого появления элемента в нем и заканчивающийся вторым его появлением включительно. Если элемента нет вообще – вернуть пустой кортеж.
 
-![Меню](https://github.com/soft2k/Software_Engineering/blob/main/pic/Tema2Pic14.PNG)
+  ```python
+       def cortesh(incoming_list, number):
+        if number not in incoming_list:
+            return (0)
+        if incoming_list.count(number) == 1:
+            return incoming_list[incoming_list.index(number):]
+        return incoming_list[incoming_list.index(number):incoming_list.index(number, incoming_list.index(number) + 1) + 1]
+    
+    
+    print(cortesh((1, 2, 3), 8))
+    print(cortesh((1, 8, 3, 4, 8, 8, 9, 2), 8))
+    print(cortesh((1, 2, 8, 5, 1, 2, 9), 8))
+  ```
+
+  # Результат
+![Меню](https://github.com/soft2k/Software_Engineering/blob/Tema6/pic/Screenshot_9.png)
+
   # Вывод
-  
+  Этот код определяет функцию cortesh, которая принимает список и число, а затем возвращает часть списка, начиная с первого вхождения этого числа, до второго вхождения, если оно существует, или до конца списка, если число встречается только один раз.
 
 
    ## Самостоятельная работа №5
   
-  ### Создать программу, которая читает текстовый файл, подсчитывает частоту каждого слова в нем и записывает результаты в новый файл.
+  ### Напишите функцию analyze_grades, которая принимает список кортежей, где каждый кортеж содержит имя студента и его оценку. Функция должна вернуть кортеж, содержащий следующую информацию:
   ```python
-   def read_names(filename):
-    try:
-        with open(filename, 'r', encoding='utf-8') as file:
-            names = file.readlines()
-        return [name.strip() for name in names]
-    except FileNotFoundError:
-        print(f"Ошибка: Файл '{filename}' не найден.")
-        return []
+   def analyze_grades(students):
+    if not students:
+        return (0, None, None, 0)
+    
+    total = sum(grade for _, grade in students)
+    average = total / len(students)
+    
+    max_student = max(students, key=lambda x: x[1])
+    min_student = min(students, key=lambda x: x[1])
+    
+    above_average = sum(1 for _, grade in students if grade > average)
+    
+    return (average, max_student[0], min_student[0], above_average)
 
-def greet_names(names):
-    for name in names:
-        print(f"Привет, {name}!")
+# Пример использования
+students = [
+    ("Анна", 85),
+    ("Борис", 92),
+    ("Виктория", 78),
+    ("Григорий", 95),
+    ("Дарья", 88)
+]
 
-def main():
-    names = read_names('readme.txt')
-    if names:
-        print("Приветствия:")
-        greet_names(names)
-
-if __name__ == "__main__":
-    main()
+result = analyze_grades(students)
+print(f"Средний балл: {result[0]:.2f}")
+print(f"Студент с высшим баллом: {result[1]}")
+print(f"Студент с низшим баллом: {result[2]}")
+print(f"Количество студентов выше среднего: {result[3]}")
   ```
   # Результат
-![Меню](https://github.com/soft2k/Software_Engineering/blob/main/pic/Tema2Pic15.PNG)
+![Меню](https://github.com/soft2k/Software_Engineering/blob/Tema6/pic/Screenshot_10.png)
   # Вывод 
 
 
