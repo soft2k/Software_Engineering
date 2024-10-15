@@ -1,6 +1,6 @@
 
-# Тема 2. Базовые операции языка Python
-Отчет по Теме #2 выполнил(а):
+# Тема 7. Работа с файлами (ввод, вывод)
+Отчет по Теме #7 выполнил(а):
 - Поляков Матвей Андреевич
 - ИВТ-22-2
 
@@ -11,11 +11,11 @@
 | Задание 3 | + | + |
 | Задание 4 | + | + |
 | Задание 5 | + | + |
-| Задание 6 | + | + |
-| Задание 7 | + | + |
-| Задание 8 | + | + |
-| Задание 9 | + | + |
-| Задание 10 | + | + |
+| Задание 6 | + | - |
+| Задание 7 | + | - |
+| Задание 8 | + | - |
+| Задание 9 | + | - |
+| Задание 10 | + | - |
 
 знак "+" - задание выполнено; знак "-" - задание не выполнено;
 
@@ -23,150 +23,149 @@
 - к.э.н., доцент Панов М.А.
 
   ## Лабораторная №1
-  ### Выведите в консоль три строки. Первая – любое число. Вторая – любое число в виде строки. Третья – любое число с плавающей точкой.
-  ```python
-  print("123")
-  print(1.23)
-  print(123)
+  ### Составьте текстовый файл и положите его в одну директорию с программой на Python. Текстовый файл должен состоять минимум из двух строк.
+  ```
+  Привет!
   ```
   # Результат
 ![Меню](https://github.com/soft2k/Software_Engineering/blob/main/pic/Tema2Pic1.png)
   # Вывод
-  С помощью print вывели 3 строки - число, текст, число с плавающей точкой
+ Создал файл
+
 
 
    ## Лабораторная №2
-  ### Выведите в консоль три строки. Первая – результат сложения или вычитания минимум двух переменных типа int. Вторая – результат сложения или вычитания минимум двух переменных типа float. Третья – результат сложения или вычитания минимум двух переменных типа int и float.
+  ### Напишите программу, которая выведет только первую строку из вашего файла, при этом используйте конструкцию open()/close().
   
-  ```python
-  print(123-100)
-  print(5.2 + 5.3)
-  print(5 + 3.25 + 100 + 6.7)
-  ```
+      ```python
+     with open('readme.txt','r',encoding='utf-8') as file:
+        line = file.readline().strip()
+    print(line)
+      ```
   # Результат
 ![Меню](https://github.com/soft2k/Software_Engineering/blob/main/pic/Tema2Pic2.png)
+
   # Вывод
-  С помощью print вывели 3 строки - число, текст, число с плавающей точкой
+  С помощью open открыли файл txt и вывели первую строчку Привет!
 
 
 
    ## Лабораторная №3
-  ### Выведите в консоль три строки. Первая – обычная строка. Вторая – F строка с использованием заранее объявленной переменной. Третья – сложите две или более строк в одну.
+  ### Напишите программу, которая выведет все строки из вашего файла в массиве, при этом используйте конструкцию open()/close().
   
   ```python
-  print("Hello world!")
+    with open('readme.txt','r',encoding='utf-8') as file:
+        line = file.readlines()
+    print(line)
 
-  world = "world"
-  print(f"Hello {world}!")
-  
-  one = "Hello "
-  two = "world!"
-  print(one + two)
   ```
   # Результат
 ![Меню](https://github.com/soft2k/Software_Engineering/blob/main/pic/Tema2Pic3.png)
   # Вывод
-  С помощью print вывели 3 строки - обычная строка, строка с -f и использование переменной в print и сложили две переменные в print
+  С помощью open открыли файл txt и вывели все строчки
+
 
 
 
    ## Лабораторная №4
   
-  ### Выведите в консоль три строки. Первая – трансформация любого типа переменной в bool. Вторая – трансформация любого типа переменной в float или int. Третья – трансформация любого типа переменной в str.
+  ### Напишите программу, которая выведет все строки из вашего файла в массиве, при этом используйте конструкцию with open().
   ```python
-    one = "hello"
-    print(bool(one))
-    
-    two = 100
-    print(float(two))
-    
-    three = None
-    print(str(three))
+    with open('readme.txt','r',encoding='utf-8') as file:
+        line = file.readlines()
+    print(line)
   ```
+
   # Результат
 ![Меню](https://github.com/soft2k/Software_Engineering/blob/main/pic/Tema2Pic4.png)
   # Вывод
-  С помощью print вывели 3 строки:
-  
-  1)Трансформация в bool
-  2)Трансформация в float
-  3)Трансформация в string
-  
+    С помощью open открыли файл txt и вывели все строчки
 
 
 ## Лабораторная №5
   
-  ### Присвойте трем переменным различные значения, воспользовавшись функцией input()
+  ### Напишите программу, которая выведет каждую строку из вашего файла отдельно, при этом используйте конструкцию with open().
   ```python
-  one = input("one: ")
-  two = input("two: ")
-  three = input("three: ")
-  print(one, two, three)
+  with open('readme.txt','r',encoding='utf-8') as file:
+   for line in file:
+      print(line.strip())
   ```
   # Результат
 ![Меню](https://github.com/soft2k/Software_Engineering/blob/main/pic/Tema2Pic5.png)
+
   # Вывод
-  С помощью input() присвоил трем переменным значения
+   С помощью open открыли файл txt и вывели все строчки по отдельности
 
 
 
    ## Лабораторная №6
   
-  ### Создайте две любые числовые переменные и выполните над ними несколько математических операций: возведение в степень, обычное деление, целочисленное деление, нахождение остатка от деления. При желании вы можете проверить как работают эти вычисления с разными типами данных, например, сначала создать две переменные int, затем создать две переменные float и наконец создать переменные типа int и float и провести над ними операции, прописанные выше.
+  ### Напишите программу, которая будет добавлять новую строку в ваш файл, а потом выведет полученный файл в консоль. Вывод можно осуществлять любым способом. Обязательно проверьте сам файл, чтобы изменения в нем тоже отображались.
 
   ```python
-      a = 5
-      b = 10
-      print("В степени ", a ** b )
-      print("Деление ", a / b)
-      print("Целочисленное деления ", a // b)
-      print("Нахождения остатка от деления ", a % b)
+      with open('readme.txt','a',encoding='utf-8') as file:
+        file.write('\nНовая строка')
+      with open('readme.txt','r',encoding='utf-8') as file:
+        print(file.read())
   ```
   # Результат
 ![Меню](https://github.com/soft2k/Software_Engineering/blob/main/pic/Tema2Pic6.png)
-  # Вывод
-  Знаков *,/,% выполнили математические операции
-1)Возведениен в степень
-2)Деление
-3)Целочисленное деления
-4)Нахождения остатка от деления
 
-   ## Лабораторная №7
-  ### Создайте любую строковую переменную и произведите над ней математическое действие умножение на любое число.
+  # Вывод
+  С помощью file.write добавили новую строчку и 
+    
+  ## Лабораторная №7
+  ### Напишите программу, которая перепишет всю информацию, которая была у вас в файле до этого, например напишет любые данные из произвольно вами составленного списка. Также не забудьте проверить что измененная вами информация сохранилась в файле.
+  
   ```python
-  word = 'hello '
-  print(word * 6)
+      string = ['Первая строка', 'Вторая строка', 'Третья строка']
+    with open('readme.txt','w',encoding='utf-8') as file:
+        for line in string:
+            file.write(line + '\n')
+    with open('readme.txt','r',encoding='utf-8') as file:
+        print(file.read())
   ```
   # Результат
 ![Меню](https://github.com/soft2k/Software_Engineering/blob/main/pic/Tema2Pic7.png)
   # Вывод
-  Мы произвели умножение над строковой перменной и получили результат,где это слово было продублированно на число умножения
+   С помощью file.write добавили новые строчки,перепесали данные 
 
   
    ## Лабораторная №8
 
    
-  ### Посчитайте сколько раз символ ‘o’ встречается в строке ‘Hello World
+  ### Выберите любую папку на своем компьютере, имеющую вложенные директории. Выведите на печать в терминал ее содержимое, как и всех подкаталогов при помощи функции print_docs(directory).
   ```python
-  str = "hello world"
-  print(str.count("o"))
+      import os
+    def print_docs(directory):
+        for root, dirs, files in os.walk(directory):
+            for name in files:
+                print(os.path.join(root, name))
+    print_docs(r'C:\Users\matve\OneDrive\Рабочий стол\pic')
   ```
   # Результат
 ![Меню](https://github.com/soft2k/Software_Engineering/blob/main/pic/Tema2Pic8.png)
+
   # Вывод
-  С помощью count мы посчитатли сколько буква "О" встречается в выражение "hello world" 
+  Все скриншоты выводится в терминал
 
 
    ## Лабораторная №9
 
    
-  ### Напишите предложение ‘Hello World’ в две строки. Написанная программа должна занимать одну строку в редакторе кода
+  ### Документ «input.txt» содержит следующий текст: Приветствие Спасибо Извините Пожалуйста До свидания Ты готов? Как дела? С днем рождения! Удача! Я тебя люблю. Требуется реализовать функцию, которая выводит слово, имеющее максимальную длину (или список слов, если таковых несколько). Проверьте работоспособность программы на своем наборе данных.
   
   ```python
-  print("Hello\nWorld")
+      def max(filename):
+        with open(filename, 'r', encoding='utf-8') as file:
+            words = file.read().split()
+        max_length = max(len(word) for word in words)
+        return [word for word in words if len(word) == max_length]
+    print(max('readme.txt'))
   ```
   # Результат
 ![Меню](https://github.com/soft2k/Software_Engineering/blob/main/pic/Tema2Pic9.png)
+
   # Вывод
   С помощью \n разделил Hello и World
 
@@ -175,156 +174,185 @@
    ## Лабораторная №10
 
    
-  ### Из предложения ‘Hello World’ выведите в консоль только 2 символ, а затем выведите слово ‘Hello’
+  ### Требуется создать csv-файл «rows_300.csv» со следующими столбцами: • № - номер по порядку (от 1 до 300); • Секунда – текущая секунда на вашем ПК; • Микросекунда – текущая миллисекунда на часах. Для наглядности на каждой итерации цикла искусственно приостанавливайте скрипт на 0,01 секунду.
   
   ```python
-  str = "hello world"
-  print(str.count("o"))
+import csv
+import time
+with open('rows_300.csv', 'w', newline='') as csvfile:
+    writer = csv.writer(csvfile)
+    writer.writerow(['№', 'Секунда', 'Микросекунда'])
+    for i in range(1, 301):
+        seconds = time.localtime().tm_sec
+        microseconds = int(time.time() * 1e6) % 1e6
+        print(f"Строка {i}: Секунды - {seconds}, Микросекунды - {microseconds}")
+        writer.writerow([i, seconds, microseconds])
+        time.sleep(0.01)
   ```
   # Результат
 ![Меню](https://github.com/soft2k/Software_Engineering/blob/main/pic/Tema2Pic10.png)
-  # Вывод
-  С помощью count мы посчитатли сколько буква "О" встречается в выражение "hello world" 
 
+
+  # Вывод
+  Создали csv файл и занесли в него данные
 
 
   ## Самостоятельная работа №1
   ### Выведите в консоль булевую переменную False, не используя слово False в строке или изначально присвоенную булевую переменную. Программа должна занимать не более двух строк редактора кода.
   ```python
-  false = ""
-  print(bool(false))
+      from collections import Counter
+    with open('aaa.txt', 'r', encoding='utf-8') as file:
+        text = file.read()
+    words = text.split()
+    word_count = len(words)
+    word_freq = Counter(words)
+    most_common_word, most_common_count = word_freq.most_common(1)[0]
+    print(f'Количество слов: {word_count}')
+    print(f'Самое частое слово: "{most_common_word}" (встречается {most_common_count} раз)')
   ```
   # Результат
 ![Меню](https://github.com/soft2k/Software_Engineering/blob/main/pic/Tema2Pic11.PNG)
+
   # Вывод
-  Вывел в строковую переменную пустоту и трансформировал в bool 
+  Вывел в сколько всего слов и частое слова
 
 
    ## Самостоятельная работа №2
-  ### Присвоить значения трем переменным и вывести их в консоль, используя только две строки редактора кода
+  ### У вас появилась потребность в ведении книги расходов, посмотрев все существующие варианты вы пришли к выводу что вас ничего не устраивает и нужно все делать самому. Напишите программу для учета расходов. Программа должна позволять вводить информацию о расходах, сохранять ее в файл и выводить существующие данные в консоль. Ввод информации происходит через консоль. Результатом выполнения задачи будет: скриншот файла с учетом расходов, листинг кода, и вывод в консоль, с демонстрацией работоспособности программы.
   
   ```python
-  a, b, c = 1, 2, 3
-  print(a, b, c)
+  # expense_tracker.py
+
+def add_expense(expenses_file):
+    expense = input("Введите описание расхода: ")
+    cost = float(input("Введите стоимость расхода: "))
+    with open(expenses_file, 'a', encoding='utf-8') as file:
+        file.write(f"{expense}: {cost}\n")
+
+def view_expenses(expenses_file):
+    with open(expenses_file, 'r', encoding='utf-8') as file:
+        expenses = file.readlines()
+    for expense in expenses:
+        print(expense.strip())
+
+def main():
+    expenses_file = 'expenses.txt'
+    while True:
+        print("1. Добавить расход")
+        print("2. Просмотреть расходы")
+        print("3. Выход")
+        choice = input("Выберите опцию: ")
+        if choice == '1':
+            add_expense(expenses_file)
+        elif choice == '2':
+            view_expenses(expenses_file)
+        elif choice == '3':
+            break
+        else:
+            print("Неверная опция. Пожалуйста, попробуйте снова.")
+
+if __name__ == "__main__":
+    main()
   ```
   # Результат
 ![Меню](https://github.com/soft2k/Software_Engineering/blob/main/pic/Tema2Pic12.PNG)
   # Вывод
-  С помощью перечислениям запятой,можно выводить и присваивать значения
+  Создали программу которая добавляет ии показывает записи расходов
 
 
 
    ## Самостоятельная работа №3
-  ### Реализуйте ввод данных в программу, через консоль, в виде только целых чисел (тип данных int). То есть при вводе буквенных символов в консоль, программа не должна работать. Программа должна занимать не более двух строк редактора кода.
+  ### Имеется файл input.txt с текстом на латинице. Напишите программу, которая выводит следующую статистику по тексту: количество букв латинского алфавита; число слов; число строк. • Текст в файле: Beautiful is better than ugly. Explicit is better than implicit. Simple is better than complex. Complex is better than complicated. • Ожидаемый результат: Input file contains: 108 letters 20 words 4 lines
   
   ```python
-  print(int(input()))
+ def text_statistics(filename):
+    with open(filename, 'r', encoding='utf-8') as file:
+        content = file.readlines()
+
+
+    line_count = len(content)
+
+
+    word_count = 0
+    letter_count = 0
+
+    for line in content:
+        words = line.split()
+        word_count += len(words)
+        letter_count += sum(c.isalpha() for c in line)
+
+    return letter_count, word_count, line_count
+
+def main():
+    filename = 'readme.txt'
+    letters, words, lines = text_statistics(filename)
+    print(f"Input file contains: {letters} letters {words} words {lines} lines")
+
+if __name__ == "__main__":
+    main()
   ```
   # Результат
 ![Меню](https://github.com/soft2k/Software_Engineering/blob/main/pic/Tema2Pic13.PNG)
   # Вывод
-  С int и input он не принимает str выражения
+  Программа выводит количество букв, слов и строк из файла.
 
 
 
    ## Самостоятельная работа №4
   
-  ### Создайте только одну строковую переменную. Длина строки должна не превышать 5 символов. На выходе мы должны получить строку длиной не менее 16 символов. Программа должна занимать не более двух строк редактора кода
+  ### Напишите программу, которая получает на вход предложение, выводит его в терминал, заменяя все запрещенные слова звездочками * (количество звездочек равно количеству букв в слове). Запрещенные слова, разделенные символом пробела, хранятся в текстовом файле input.txt. Все слова в этом файле записаны в нижнем регистре. Программа должна заменить запрещенные слова, где бы они ни встречались, даже в середине другого слова. Замена производится независимо от регистра: если файл input.txt содержит запрещенное слово exam, то слова exam, Exam, ExaM, EXAM и exAm должны быть заменены на ****. • Запрещенные слова: hello email python the exam wor is • Предложение для проверки: Hello, world! Python IS the programming language of thE future. My EMAIL is ksusha.katkova2468@yandex.ru PYTHON is awesome!!!! • Ожидаемый результат: *****, ***ld! ****** ** *** programming language of *** future. My ***** ** ksusha.katkova2468@yandex.ru ****** ** awesome!!!!
   ```python
-    str = "qwer"
-    print(str * 5)
+   import re
+def censor_text(input_text, banned_words):
+    for word in banned_words:
+        input_text = re.sub(word, '*' * len(word), input_text, flags=re.IGNORECASE)
+    return input_text
+with open('readme.txt', 'r', encoding='utf-8') as file:
+    banned_words = file.read().strip().split()
+sentence = input("Введите предложение для проверки: ")
+censored_sentence = censor_text(sentence, banned_words)
+print(censored_sentence)
   ```
   # Результат
 
 ![Меню](https://github.com/soft2k/Software_Engineering/blob/main/pic/Tema2Pic14.PNG)
   # Вывод
-  С помощью * умножил str на число и получил не менее 16 символов
+  
 
 
    ## Самостоятельная работа №5
   
-  ### Создайте три переменные: день (тип данных - числовой), месяц (тип данных - строка), год (тип данных - числовой) и выведите в консоль текущую дату в формате: “Сегодня день месяц год. Всего хорошего!” используя F строку и оператор end внутри print(), в котором вы должны написать фразу “Всего хорошего!”. Программа должна занимать не более двух строк редактора кода
-
+  ### Создать программу, которая читает текстовый файл, подсчитывает частоту каждого слова в нем и записывает результаты в новый файл.
   ```python
-   day, month, year = 31, "декабря", 2024
-    print(f"Сегодня {day} {month} {year}. ", end="Всего хорошего!");
+   def read_names(filename):
+    try:
+        with open(filename, 'r', encoding='utf-8') as file:
+            names = file.readlines()
+        return [name.strip() for name in names]
+    except FileNotFoundError:
+        print(f"Ошибка: Файл '{filename}' не найден.")
+        return []
+
+def greet_names(names):
+    for name in names:
+        print(f"Привет, {name}!")
+
+def main():
+    names = read_names('readme.txt')
+    if names:
+        print("Приветствия:")
+        greet_names(names)
+
+if __name__ == "__main__":
+    main()
   ```
   # Результат
 ![Меню](https://github.com/soft2k/Software_Engineering/blob/main/pic/Tema2Pic15.PNG)
-  # Вывод
-  Вывел три переменные 
+  # Вывод 
 
 
-
-   ## Самостоятельная работа №6
-  
-  ### В предложении ‘Hello World’ вставьте ‘my’ между двумя словами. Выведите полученное предложение в консоль в одну строку. Программа должна занимать не более двух строк редактора кода.
-
-  ```python
-     str = 'Hello World'
-     print (str[:-5], 'my', str[5:])
-  ```
-  # Результат
-![Меню](https://github.com/soft2k/Software_Engineering/blob/main/pic/Tema2Pic16.PNG)
-  # Вывод
-  
-
-   ## Самостоятельная работа №7
-  ### Узнайте длину предложения ‘Hello World’, результат выведите в консоль. Программа должна занимать не более двух строк редактора кода
-  ```python
-  str = "Hello World"
-  print(len(str))
-  ```
-  # Результат
-![Меню](https://github.com/soft2k/Software_Engineering/blob/main/pic/Tema2Pic17.PNG)
-  # Вывод
- Благодаря len мы получили кол-во символов длины выражения
-
-  
-   ## Самостоятельная работа №8
 
    
-  ### Переведите предложение ‘HELLO WORLD’ в нижний регистр. Программа должна занимать не более двух строк редактора кода
-  ```python
-  str = "HELLO WORLD"
-  print(str.lower())
-  ```
-  # Результат
-![Меню](https://github.com/soft2k/Software_Engineering/blob/main/pic/Tema2Pic18.PNG)
-  # Вывод
-  С помощью lower мы перевели в нижний регистр
-
-
-   ## Самостоятельная работа №9
-
-   
-  ### Напишите программу, которая проверяет, является ли введенное число четным.
-  
-  ```python
-      int =  int(input())
-    if int % 2 == 0:
-        print("Четное")
-    else:
-        print("Не четное")
-  ```
-  # Результат
-![Меню](https://github.com/soft2k/Software_Engineering/blob/main/pic/Tema2Pic19.PNG)
-
-
-   ## Самостоятельная работа №10
-
-   
-  ### Переведите предложение ‘hello world’ в верхний регистр
-  
-  ```python
-  str = "hello world"
-  print(str.upper())
-  ```
-  # Результат
-![Меню](https://github.com/soft2k/Software_Engineering/blob/main/pic/Tema2Pic20.PNG)
-  # Вывод
-  С помощью upper мы перевели в нижний регистр
-
 
   
 
