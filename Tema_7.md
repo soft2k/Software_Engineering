@@ -28,7 +28,7 @@
   Привет!
   ```
   # Результат
-![Меню](https://github.com/soft2k/Software_Engineering/blob/main/pic/Tema2Pic1.png)
+![Меню](https://github.com/soft2k/Software_Engineering/blob/Tema7/pic/Screenshot_1.png)
   # Вывод
  Создал файл
 
@@ -43,7 +43,7 @@
     print(line)
       ```
   # Результат
-![Меню](https://github.com/soft2k/Software_Engineering/blob/main/pic/Tema2Pic2.png)
+![Меню](https://github.com/soft2k/Software_Engineering/blob/Tema7/pic/Screenshot_2.png)
 
   # Вывод
   С помощью open открыли файл txt и вывели первую строчку Привет!
@@ -60,7 +60,7 @@
 
   ```
   # Результат
-![Меню](https://github.com/soft2k/Software_Engineering/blob/main/pic/Tema2Pic3.png)
+![Меню](https://github.com/soft2k/Software_Engineering/blob/Tema7/pic/Screenshot_3.png)
   # Вывод
   С помощью open открыли файл txt и вывели все строчки
 
@@ -77,7 +77,7 @@
   ```
 
   # Результат
-![Меню](https://github.com/soft2k/Software_Engineering/blob/main/pic/Tema2Pic4.png)
+![Меню](https://github.com/soft2k/Software_Engineering/blob/Tema7/pic/Screenshot_4.png)
   # Вывод
     С помощью open открыли файл txt и вывели все строчки
 
@@ -91,7 +91,7 @@
       print(line.strip())
   ```
   # Результат
-![Меню](https://github.com/soft2k/Software_Engineering/blob/main/pic/Tema2Pic5.png)
+![Меню](https://github.com/soft2k/Software_Engineering/blob/Tema7/pic/Screenshot_5.png)
 
   # Вывод
    С помощью open открыли файл txt и вывели все строчки по отдельности
@@ -109,7 +109,7 @@
         print(file.read())
   ```
   # Результат
-![Меню](https://github.com/soft2k/Software_Engineering/blob/main/pic/Tema2Pic6.png)
+![Меню](https://github.com/soft2k/Software_Engineering/blob/Tema7/pic/Screenshot_6.png)
 
   # Вывод
   С помощью file.write добавили новую строчку и 
@@ -126,7 +126,7 @@
         print(file.read())
   ```
   # Результат
-![Меню](https://github.com/soft2k/Software_Engineering/blob/main/pic/Tema2Pic7.png)
+![Меню](https://github.com/soft2k/Software_Engineering/blob/Tema7/pic/Screenshot_7.png)
   # Вывод
    С помощью file.write добавили новые строчки,перепесали данные 
 
@@ -144,7 +144,7 @@
     print_docs(r'C:\Users\matve\OneDrive\Рабочий стол\pic')
   ```
   # Результат
-![Меню](https://github.com/soft2k/Software_Engineering/blob/main/pic/Tema2Pic8.png)
+![Меню](https://github.com/soft2k/Software_Engineering/blob/Tema7/pic/Screenshot_8.png)
 
   # Вывод
   Все скриншоты выводится в терминал
@@ -164,7 +164,7 @@
     print(max('readme.txt'))
   ```
   # Результат
-![Меню](https://github.com/soft2k/Software_Engineering/blob/main/pic/Tema2Pic9.png)
+![Меню](https://github.com/soft2k/Software_Engineering/blob/Tema7/pic/Screenshot_9.png)
 
   # Вывод
   С помощью \n разделил Hello и World
@@ -190,7 +190,7 @@ with open('rows_300.csv', 'w', newline='') as csvfile:
         time.sleep(0.01)
   ```
   # Результат
-![Меню](https://github.com/soft2k/Software_Engineering/blob/main/pic/Tema2Pic10.png)
+![Меню](https://github.com/soft2k/Software_Engineering/blob/Tema7/pic/Screenshot_10.png)
 
 
   # Вывод
@@ -211,7 +211,7 @@ with open('rows_300.csv', 'w', newline='') as csvfile:
     print(f'Самое частое слово: "{most_common_word}" (встречается {most_common_count} раз)')
   ```
   # Результат
-![Меню](https://github.com/soft2k/Software_Engineering/blob/main/pic/Tema2Pic11.PNG)
+![Меню](https://github.com/soft2k/Software_Engineering/blob/Tema7/pic/Screenshot_11.png)
 
   # Вывод
   Вывел в сколько всего слов и частое слова
@@ -255,7 +255,7 @@ if __name__ == "__main__":
     main()
   ```
   # Результат
-![Меню](https://github.com/soft2k/Software_Engineering/blob/main/pic/Tema2Pic12.PNG)
+![Меню](https://github.com/soft2k/Software_Engineering/blob/Tema7/pic/Screenshot_12.png)
   # Вывод
   Создали программу которая добавляет ии показывает записи расходов
 
@@ -292,7 +292,7 @@ if __name__ == "__main__":
     main()
   ```
   # Результат
-![Меню](https://github.com/soft2k/Software_Engineering/blob/main/pic/Tema2Pic13.PNG)
+![Меню](https://github.com/soft2k/Software_Engineering/blob/Tema7/pic/Screenshot_13.png)
   # Вывод
   Программа выводит количество букв, слов и строк из файла.
 
@@ -315,7 +315,7 @@ print(censored_sentence)
   ```
   # Результат
 
-![Меню](https://github.com/soft2k/Software_Engineering/blob/main/pic/Tema2Pic14.PNG)
+![Меню](https://github.com/soft2k/Software_Engineering/blob/Tema7/pic/Screenshot_14.png)
   # Вывод
   
 
@@ -347,7 +347,7 @@ if __name__ == "__main__":
     main()
   ```
   # Результат
-![Меню](https://github.com/soft2k/Software_Engineering/blob/main/pic/Tema2Pic15.PNG)
+![Меню](https://github.com/soft2k/Software_Engineering/blob/Tema7/pic/Screenshot_15.png)
   # Вывод 
 
 
