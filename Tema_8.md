@@ -33,7 +33,7 @@
   my_car = Car('Lada','Vesta')#  создаем экземпляр класса Car с аргументами 'Lada' и 'Vesta'
   ```
   # Результат
-(https://github.com/soft2k/Software_Engineering/blob/Tema8/pic/Screenshot_1.png)
+[!Меню](https://github.com/soft2k/Software_Engineering/blob/Tema8/pic/Screenshot_1.png)
   # Вывод
  
  Этот код создает класс Car для хранения информации об автомобиле (марки и модели) и создает конкретный экземпляр автомобиля Lada Vesta.
