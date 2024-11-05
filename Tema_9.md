@@ -259,7 +259,7 @@ if __name__ == '__main__':
     gardener.harvest()
 ```
 ### Результат.
-![image](![image](https://github.com/soft2k/Software_Engineering/blob/Tema9/pic/Screenshot_6.png))
+![image](https://github.com/soft2k/Software_Engineering/blob/Tema9/pic/Screenshot_6.png)
 
 ## Выводы
 Этот код реализует систему выращивания помидоров, включая классы Tomato (отдельный помидор), TomatoBush (куст с помидорами) и Gardener (садовник), где каждый класс имеет свои специфические методы и свойства, а также добавлен статический метод knowledge_base для вывода справочной информации о садоводстве.
