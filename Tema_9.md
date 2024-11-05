@@ -43,7 +43,7 @@
     print(person2.name))
 ```
 ### Результат.
-![image](https://github.com/user-attachments/assets/470f70eb-aa4b-4925-bc98-a58178cef2a4)
+![image](https://github.com/soft2k/Software_Engineering/blob/Tema9/pic/Screenshot_1.png)
 
 ## Выводы
 Код создает класс Ivan, который при инициализации объекта проверяет, является ли переданное имя "Иван", и в зависимости от этого устанавливает соответствующее сообщение в атрибуте name, после чего демонстрирует работу класса на двух примерах
@@ -72,7 +72,7 @@
     icecream.composition()
 ```
 ### Результат.
-![image](https://github.com/user-attachments/assets/034ca6f8-318f-42f5-9cca-d8a1b09afc63)
+![image](https://github.com/soft2k/Software_Engineering/blob/Tema9/pic/Screenshot_2.png)
 
 ## Выводы
 Код создает класс IceCream для создания объектов мороженого, который при инициализации может принимать ингредиент в виде строки, а метод composition выводит информацию о том, обычное это мороженое или с добавленным ингредиентом.
@@ -102,7 +102,7 @@ obj = MyClass(42)
 print(obj.get_value())
 ```
 ### Результат.
-![image](https://github.com/user-attachments/assets/c17ca1a9-6183-4a29-a48c-34a603005a62)
+![image](https://github.com/soft2k/Software_Engineering/blob/Tema9/pic/Screenshot_3.png)
 
 ## Выводы
 Код создает класс MyClass с приватным атрибутом __value и использует декоратор property для создания свойства value, которое позволяет получать, устанавливать и удалять значение этого атрибута через специальные методы.
@@ -130,7 +130,7 @@ dog = Dog()
 print(f"{dog.className}, {dog.sound}")
 ```
 ### Результат.
-![image](https://github.com/user-attachments/assets/23503d07-0bac-4315-b88a-0315494faccd)
+![image](https://github.com/soft2k/Software_Engineering/blob/Tema9/pic/Screenshot_4.png)
 
 ## Выводы
 Код демонстрирует наследование классов, где базовый класс Mammal наследуется классами Dog и Cat, каждый из которых имеет свои уникальные атрибуты species и sound, а затем выводится информация о созданном объекте класса Dog.
@@ -161,7 +161,7 @@ greet(ivan)
 
 ```
 ### Результат.
-![image](https://github.com/user-attachments/assets/d97b67d1-f768-434b-a4b0-7521c2a8a4e2)
+![image](https://github.com/soft2k/Software_Engineering/blob/Tema9/pic/Screenshot_5.png)
 
 ## Выводы
 Код демонстрирует пример использования статических методов и переменных в Python для реализации приветствий на разных языках.
@@ -259,7 +259,7 @@ if __name__ == '__main__':
     gardener.harvest()
 ```
 ### Результат.
-![image]()
+![image](![image](https://github.com/soft2k/Software_Engineering/blob/Tema9/pic/Screenshot_6.png))
 
 ## Выводы
 Этот код реализует систему выращивания помидоров, включая классы Tomato (отдельный помидор), TomatoBush (куст с помидорами) и Gardener (садовник), где каждый класс имеет свои специфические методы и свойства, а также добавлен статический метод knowledge_base для вывода справочной информации о садоводстве.
